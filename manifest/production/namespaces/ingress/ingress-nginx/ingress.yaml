@@ -1,9 +1,9 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: nginx
+  name: ingress-nginx
   labels:
-    name: nginx
+    name: ingress-nginx
 spec:
   rules:
   - host: dicky-setiadi.me
@@ -13,6 +13,6 @@ spec:
         path: "/"
         backend:
           service:
-            name: nginx
+            name: service-ingress
             port: 
               number: 80
