@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ingress-deployment
-        image: nginx:latest
+        image: dkysetiadi/webportfolio
         resources:
           limits:
             memory: "20Mi"
